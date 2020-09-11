@@ -1,0 +1,18 @@
+h1 {
+  color: blue;
+}
+
+th {
+   text-align: center;
+   background-color: #6495ED;
+   color: white;
+}
+
+th, td{
+	padding: 5px;
+	border-bottom: 1px solid #ddd;
+}
+
+.idtabela{
+	text-align: center;
+}

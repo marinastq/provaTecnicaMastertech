@@ -24,7 +24,7 @@ public class Controles extends HttpServlet {
 			RequestDispatcher requestDispatcher = request.getRequestDispatcher(VOLTAR);
 			requestDispatcher.forward(request, response);	
 			return;
-		} else if(botao.equals("Gest„o de Usu·rios")) {
+		} else if(botao.equals("Gest√£o de Usu√°rios")) {
 			pagina = GESTAOUSUARIOS;
 		} else if(botao.equals("Batida de Ponto")) {
 			pagina = BATIDAPONTO;

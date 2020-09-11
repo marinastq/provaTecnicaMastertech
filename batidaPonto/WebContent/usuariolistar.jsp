@@ -1,27 +1,29 @@
-<%@ page language="java" contentType="text/html; charset=ISO-8859-1" pageEncoding="ISO-8859-1"%>
+<%@ page contentType="text/html; charset=ISO-8859-1" language="java" pageEncoding="UTF-8" import="java.sql.*" errorPage="" %>
  <%@ taglib uri='http://java.sun.com/jsp/jstl/core' prefix='c'%>
  <%@ taglib uri="http://java.sun.com/jsp/jstl/fmt" prefix="fmt" %>
+ <link rel="stylesheet" href="${pageContext.request.contextPath}/css/styles.css" />
 <!DOCTYPE html>
 <html>
 <head>
-	<meta charset="ISO-8859-1">
-	<title>PONTO ELETRÔNICO</title>
+	<title>PONTO ELETRÃ”NICO</title>
+	
 </head>
 <body>
-	<h1>Usuários cadastrados</h1>
+	<h1>PONTO ELETRÃ”NICO</h1>
+	<h2>UsuÃ¡rios cadastrados</h2>
 		<table>
 	 		<tr>
-	   			<td>ID</td>
-	   			<td>NOME</td>
-	   			<td>CPF</td>
-	   			<td>E-MAIL</td>
-	   			<td>DATA CADASTRO</td>   			
-	   			<td colspan=3></td>
+	   			<th>ID</th>
+	   			<th>Nome</th>
+	   			<th>CPF</th>
+	   			<th>E-mail</th>
+	   			<th>Data cadastro</th>   			
+	   			<th colspan=3></th>
 	 		</tr>
 			<c:forEach var="u" items="${listaUsuario}">
 				<form action="CadastraUsuario" method="post">
 					<tr>
-			   			<td><c:out value="${u.id}" /></td>
+			   			<td class="idtabela"><c:out value="${u.id}" /></td>
 			   			<td><c:out value="${u.nome}" /></td>
 			   			<td><c:out value="${u.cpf}" /></td>
 			   			<td><c:out value="${u.email}" /></td>
